@@ -25,6 +25,20 @@
 
 <!-- CSS Just for demo purpose, don't include it in your project -->
 <link href="assets/demo/demo.css" rel="stylesheet" />
+<style>
+.fullscreen-video-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+.fullscreen-video-wrap video{
+  min-height:100%;
+  min-width:100%;
+}
+</style>
 
 <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
 <script>
@@ -55,7 +69,7 @@
         		 	</button>
         		</div>
 
-        	    <div class="collapse navbar-collapse" data-nav-image="./assets/img//blurred-image-1.jpg">
+        	    <div class="collapse navbar-collapse">
         			<ul class="navbar-nav ml-auto">
 
                 <li class="nav-item">
@@ -191,9 +205,9 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
                     <h1 class="title" style="font-family: 'Righteous', cursive;">
-                        <!-- <b>Our Events</b> -->
+                        <b>Our Events</b>
                         <!-- or -->
-						<b><chak>O</chak><helix>u</helix><chak>r</chak> <helix>E</helix><chak>v</chak><helix>e</helix><chak>n</chak><helix>t</helix><chak>s</chak></b>
+						<!-- <b><chak>O</chak><helix>u</helix><chak>r</chak> <helix>E</helix><chak>v</chak><helix>e</helix><chak>n</chak><helix>t</helix><chak>s</chak></b> -->
 					</h1>
                     <h4 class="description" style="font-family: 'Josefin Sans', sans-serif;">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h4>
                 </div>
@@ -232,7 +246,7 @@
 							</a>
 					</div>
 				</div>
-				
+
                 <div class="col-md-4">
                     <div class="phone-container">
                         <img src="assets/img/ccs.png">
@@ -262,7 +276,7 @@
 							</div>
 				</div>
 
-				
+
             </div>
 
         </div>
@@ -304,7 +318,7 @@
 
   </footer>
 			</div>
-			
+
 
 			<script src="assets/js/plugins/anime.min.js" type="text/javascript"></script>
 			<script src="assets/js/plugins/staced_card.js" type="text/javascript"></script>
