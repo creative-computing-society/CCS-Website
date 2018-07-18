@@ -27,7 +27,6 @@
 <link href="assets/demo/demo.css" rel="stylesheet" />
 
 <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
-
 <script>
         $(window).on('load', function() { // makes sure the whole site is loaded
             $('#loader').fadeOut(); // will first fade out the loading animation
@@ -35,23 +34,7 @@
             $('body').delay(350).css({'overflow':'visible'});
           })
 </script>
-<style>
-.fullscreen-video-wrap{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100vh;
-  overflow:hidden;
-}
-
-.fullscreen-video-wrap video{
-  min-height:100%;
-  min-width:100%;
-}
-</style>
     </head>
-
     <body class="index-page">
       <div id="preloader">
               <div id="loader">&nbsp;</div>
@@ -199,8 +182,91 @@
 
                 </div>
             </div>
-          </div>
+		  </div>
 	<!--  End Modal -->
+	<!-- <div class="features-6 section-image" style="background-image: url('assets/img/event.jpg')"> -->
+		<!-- or -->
+	<div class="features-6 section-image" style="background-image: url('assets/img/events.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h1 class="title" style="font-family: 'Righteous', cursive;">
+                        <!-- <b>Our Events</b> -->
+                        <!-- or -->
+						<b><chak>O</chak><helix>u</helix><chak>r</chak> <helix>E</helix><chak>v</chak><helix>e</helix><chak>n</chak><helix>t</helix><chak>s</chak></b>
+					</h1>
+                    <h4 class="description" style="font-family: 'Josefin Sans', sans-serif;">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h4>
+                </div>
+            </div>
+
+			<svg class="hidden">
+					<symbol id="icon-arrow" viewBox="0 0 24 24">
+						<title>arrow</title>
+						<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+					</symbol>
+					<symbol id="icon-drop" viewBox="0 0 24 24">
+						<title>drop</title>
+						<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+					</symbol>
+			</svg>
+            <div class="row">
+                <div class="col-md-4">
+					<div class="card card-profile card-plain">
+						<h2 class="card-title" style="font-family: 'Righteous', cursive; color: #A5702C;"><b>CHAKRAVYUH</b></h2>
+					</div>
+					<div class="grid grid--effect-rigel">
+							<a href="chakravyuh.html" class="grid__item grid__item--c3">
+									<div class="stack">
+										<div class="stack__deco"></div>
+										<div class="stack__deco"></div>
+										<div class="stack__deco"></div>
+										<div class="stack__deco"></div>
+										<div class="stack__figure">
+												<div class="card-image">
+														<img class="img img-raised rounded" src="assets/img/chak.jpg" width="350" height="248">
+												</div>
+										</div>
+									</div>
+									<div class="grid__item-caption">
+									</div>
+							</a>
+					</div>
+				</div>
+				
+                <div class="col-md-4">
+                    <div class="phone-container">
+                        <img src="assets/img/ccs.png">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+					<div class="card card-profile card-plain">
+						<h2 class="card-title" style="font-family: 'Righteous', cursive; color: #3B3E55;"><b>HELIX</b></h2>
+					</div>
+					<div class="grid grid--effect-rigel">
+							<a href="helix.html" class="grid__item grid__item--c1">
+									<div class="stack">
+										<div class="stack__deco"></div>
+										<div class="stack__deco"></div>
+										<div class="stack__deco"></div>
+										<div class="stack__deco"></div>
+										<div class="stack__figure">
+											<div class="card-image">
+													<img class="img img-raised rounded" src="assets/img/hel.jpg" width="350" height="248">
+											</div>
+											</div>
+									</div>
+									<div class="grid__item-caption">
+									</div>
+								</a>
+							</div>
+				</div>
+
+				
+            </div>
+
+        </div>
+    </div>
 
   <footer class="footer" >
 
@@ -237,7 +303,48 @@
 
 
   </footer>
-            </div>
+			</div>
+			
+
+			<script src="assets/js/plugins/anime.min.js" type="text/javascript"></script>
+			<script src="assets/js/plugins/staced_card.js" type="text/javascript"></script>
+			<script>
+					(function() {
+						[].slice.call(document.querySelectorAll('.grid--effect-vega > .grid__item')).forEach(function(stackEl) {
+							new VegaFx(stackEl);
+						});
+						[].slice.call(document.querySelectorAll('.grid--effect-castor > .grid__item')).forEach(function(stackEl) {
+							new CastorFx(stackEl);
+						});
+						[].slice.call(document.querySelectorAll('.grid--effect-hamal > .grid__item')).forEach(function(stackEl) {
+							new HamalFx(stackEl);
+						});
+						[].slice.call(document.querySelectorAll('.grid--effect-polaris > .grid__item')).forEach(function(stackEl) {
+							new PolarisFx(stackEl);
+						});
+						[].slice.call(document.querySelectorAll('.grid--effect-alphard > .grid__item')).forEach(function(stackEl) {
+							new AlphardFx(stackEl);
+						});
+						[].slice.call(document.querySelectorAll('.grid--effect-altair > .grid__item')).forEach(function(stackEl) {
+							new AltairFx(stackEl);
+						});
+						[].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function(stackEl) {
+							new RigelFx(stackEl);
+						});
+						[].slice.call(document.querySelectorAll('.grid--effect-canopus > .grid__item')).forEach(function(stackEl) {
+							new CanopusFx(stackEl);
+						});
+						[].slice.call(document.querySelectorAll('.grid--effect-pollux > .grid__item')).forEach(function(stackEl) {
+							new PolluxFx(stackEl);
+						});
+						[].slice.call(document.querySelectorAll('.grid--effect-deneb > .grid__item')).forEach(function(stackEl) {
+							new DenebFx(stackEl);
+						});
+					})();
+					</script>
+
+
+
 
 <!--   Core JS Files   -->
 <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
