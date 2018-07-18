@@ -9443,8 +9443,7 @@ img {
         transition: all .5s cubic-bezier(.685, .0473, .346, 1)
     }
     .navbar-collapse:before {
-        background: #f96332;
-        background: linear-gradient(#f96332, #000 80%);
+        background: #000000;
         opacity: .76;
         filter: alpha(opacity=76);
         display: block;
@@ -10127,11 +10126,11 @@ color: #3B3E55
     height:100vh;
     overflow:hidden;
   }
-  
+
   .fullscreen-video-wrap video{
     min-height:100%;
     min-width:100%;
-  } 
+  }
 
 /* stacked card */
 *,
