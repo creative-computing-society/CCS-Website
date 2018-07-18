@@ -42,6 +42,7 @@
 </style>
 
 <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.js" type="text/javascript"></script>
 <script>
         $(window).on('load', function() { // makes sure the whole site is loaded
             $('#loader').fadeOut(); // will first fade out the loading animation
@@ -103,16 +104,25 @@
 
 
             <div class="wrapper">
-              <div class="page-header page-header-small section-image" style="opacity:0.9;">
+              <div class="page-header page-header-mini section-image" style="opacity:0.9;">
                 <div class="fullscreen-video-wrap">
-                  <video src="assets/img/coding-scenes.mp4" autoplay="" loop="" >
+                  <video id="vid" autoplay loop>
+                    <source type="video/mp4" src="assets/img/coding-scenes.mp4" />
                 </video>
+                <script>
+                    document.getElementById('vid').play();
+                </script>
                 </div>
                 <div class="container">
                     <div class="row">
                       <div class="col-md-8 ml-auto mr-auto text-center" style="font-family: 'Righteous', cursive;">
                           <h1 class="title">Creative Computing Society</h1>
-                          <h4 class="description">One of the oldest computing societies in Thapar</h4>
+                          <div id="typed-strings">
+                            <p>One of the oldest computing societies in Thapar</p>
+                            <p>One of the elite computing societies in Thapar</p>
+                            <p>One of the geekiest computing societies in Thapar</p>
+                          </div>
+                          <h4 class="description"><span id="typed"></span></h4>
                       </div>
                     </div>
                   </div>
@@ -184,7 +194,10 @@
                                             Dr. Inderveer Chana, Professor and Associate Head, CSED
                                         </h3>
                                         <p class="card-description">
-                                            Lorem Ipsum doler amet....
+                                          <i class="fa fa-quote-left fa-2x"></i>&nbsp;
+                                          Creative Computing Society is a platform for budding engineers to hone their technical as well as managerial skills creatively. Various workshops and expert talks keep the members conversant with the upcoming technologies that prepares them well for the outside  world. Discussion on higher studies and hands on events  exposes the undergraduates to new technical streams. Apart from this, the event management skills that the students attain as part of hosting and conducting numerous events round the year imbibes them with good managerial skills.
+                                          On the whole, the society endeavors to render a wholesome learning environment that not only complements the academics but also the overall development of an undergraduate student at TIET.
+                                          &nbsp;<i class="fa fa-quote-right fa-2x"></i>
                                         </p>
                                     </div>
                                 </div>
@@ -222,7 +235,7 @@
                         </div>
                         <br>
                         <h4 style="font-family: 'Yanone Kaffeesatz', sans-serif;" text-justify>
-                            To bolster ideas and positive competition, we give you Chakravyuh, our week long odd semester event. 
+                            To bolster ideas and positive competition, we give you Chakravyuh, our week long odd semester event.
                         </h4>
                     </div>
 				</div>
@@ -243,7 +256,7 @@
                         </div>
                         <br>
                         <h4 style="font-family: 'Yanone Kaffeesatz', sans-serif;" text-justify>
-                            To participate in a series of tech events aimed at inspiring innovation, we give you Helix, our week long odd semester event.                         
+                            To participate in a series of tech events aimed at inspiring innovation, we give you Helix, our week long odd semester event.
                         </h4>
                     </div>
 				</div>
@@ -319,6 +332,17 @@
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc --><script src="assets/js/now-ui-kit.min23cd.js?v=1.2.1" type="text/javascript"></script>
   <!-- Sharrre libray -->
 <script src="assets/demo/jquery.sharrre.js"></script>
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    smartBackspace: true,
+    typeSpeed: 20,
+    backDelay: 700,
+    loop: true,
+    backSpeed: 30,
+    contentType: 'html',
+  });
+</script>
 <script>
 
     $(document).ready(function(){
